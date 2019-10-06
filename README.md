@@ -1,6 +1,9 @@
 ## 100yardrunCPX
 100 Yard Run is a NeoPixel based Football Game for the Circuit Playground Express (CPX) board based on CircuitPython.  It was inspired by the classic handheld Mattel football Light Emitting Diode (LED) game first released by Mattel around 1977 with a slight twist based based on the CPX NeoPixel layout.  I created 100 Yard Run to show beginner CircuityPython coders how you can create fun games with just NeoPixels and CircuitPython.  The original Mattel football game has a grid of 3 x 9 LEDs where you can move your LED player up and down as well as left and right to avoid the opposing players.  With just 10 NeoPixels available on the CPX I had to be a little creative mapping a football game to the CPX.  More details are coming....this is still work in progress.
 
+Follow me on Twitter @iTapArcade and let others know about this project!
+Get on the waiting list if interested in purchasing the CPX Button Shield Board (https://www.tindie.com/products/itaparcade/button-shield-kit-for-circuit-playground-express/) to help keep more free CircuitPython game coding projects like this coming!
+
 ## To Load Game on CPX:
 - Make sure to load Circuity Python 4.1.0 on your CPX before renaming the 100YardRunCPX.py file to code.py that automatically loads the game when you apply power to your CPX. You can download the .UF2 file by clicking on (https://github.com/adafruit/circuitpython/releases/download/4.1.0/adafruit-circuitpython-circuitplayground_express-en_US-4.1.0.uf2).  To figure out how to update your CPX with Circuit Python 4.1.0 please read the Adafruit guide at (https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart)
 - Copy the main CircuitPython game file (code.py) as well as all the accompanying .wav sound files onto the CPX
@@ -22,7 +25,7 @@
 - The 100 Yard Run Football Game is designed around a football player that has to dodge other players that are coming down the field from two different sides of the CPX board.
 - The mechanics of the game were inspired by the Timberman mobile app game (check out the game to understand the mechanics).  Rather than cutting down a tree and avoiding the branches,  you are instead running down a football field while avoiding opposing football players.  Just like the Timberman game, you dictate how fast the opposing players are coming down the field based on how fast you press the left and right buttons on the CPX Button Shield (or touching Pins A4 and A3 if you don't have the shield).  
 - The faster you move from left to right the faster the opposing football players will approach you.  You can't move too slow or you will run out of time before getting at least a certain amount of yards.  
-- Since the game is centered around NeoPixels, you can create a variety of colors for the football players.  I have predefined several colors already of some football teams.  Several CircuitPython coding concepts are in this code. Can you identify them? 
+- Since the game is centered around NeoPixels, you can create a variety of colors for the football players.  I have predefined several colors already of some football teams.  Several CircuitPython coding concepts are in this code. Can you identify them?
 (1) Basic multi-tasking concepts for fun gameplay
 (2) Leveraging the mixing of music and sound effects to enhance game play
 (3) Being able to configure the game to increase the level of difficulty
